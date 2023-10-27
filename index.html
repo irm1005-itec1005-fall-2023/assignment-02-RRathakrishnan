@@ -14,20 +14,114 @@
   <!-- Specifies the document mode for Internet Explorer -->
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-  <!-- We are using a CSS Reset file to standardize browser default css -->
-  <link rel="stylesheet" href="./reset.css" />
+<!-- We are using a CSS Reset file to standardize browser default css -->
+<link rel="stylesheet" href="./reset.css" />
 
   <!-- This is where all of our awesome CSS code goes -->
   <link rel="stylesheet" href="./style.css" />
+
 </head>
 
+
 <body>
-  <!--
+  <header class="header">
+     <a href="#" class="logo">R.Rakesh</a>
 
-    YOU HAVE TO MODIFY THE HTML TO BUILD YOUR AWESOME PAGE
+    <nav class="navbar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Contact</a>
+     </nav>
+  </header>
 
-  -->
-  <h1>Assignment 02</h1>
+  <section class="home">
+    <div class="home-image">
+      <img src="./images/r logo.jpg" class="rlogo">
+    </div>
+
+    <div class="home-content">
+      <h1>Hello, I'm Rakesh</h1>
+      <h3> THIS IS MY PORTFOLIO  </h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere assumenda exercitationem ea e</p>
+
+    </div>
+  </section>
+
+  <section class="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-gallery">
+
+      <div class="portfolio-item">
+        <img src="./images/selena psd.png" alt="Portfolio Item 1">
+        <h3>Project 1</h3>
+        <p>"Selena in Abstract" was made to integrate Selena Gomez's authenticity and creative risks, both of which inspire me. Abstract digital artwork allowed me to experiment and show off my skills with digital tools. The piece shows my determination to reject norms and push limits in unconventional ways.</p>
+
+      </div>
+      <div class="portfolio-item">
+        <img src="./images/Double Ilulison copy.jpg" alt="Portfolio Item 2">
+        <h3>Project 2</h3>
+        <P>"The 'Urban Mirage' digital artwork, seeks to highlight my prowess in digital editing and understanding of illusion. This piece of art raises questions about viewers' perceptions of reality and inspires awe and fascination. Its inclusion in the portfolio seeks to emphasise my creativity, ingenuity, and technical expertise while also showcasing my ability to produce visually appealing and thought-provoking works that push limits and spark imagination."</P>
+
+
+
+
+      </div>
+      <div class="portfolio-item">
+        <img src="./images/efiiel tower design.jpg" alt="Portfolio Item 3">
+        <h3>Project 3</h3>
+        <p> I wanted to make something for my portfolio that would show my ability as a candidate for the I.T program. Due to its iconic prominence and exquisite design, I chose the Eiffel Tower as my topic. I concentrated on representing the tower's intricate structure in my drawing, paying close attention to detail in order to create an aesthetically pleasing art piece. This attention to detail demonstrates my commitment to the craft of art as well as my ability to capture precision and (somethimg) in my work, which I believe will serve me well in the program.</p>
+    </div>
+    <section class="review-section">
+      <h2>Review Us</h2>
+      <div class="contact-form">
+        <h4>Feel free to leave a review , as it is much appreciated</h4>
+        <form action="/action_page.php">
+          <label for="fname">First name:</label> <br>
+          <input type="text" id="fname" name="fname" value="Rakesh"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" value="Rathakrishnan"> <br><br>
+          <label for="review">Review:</label><br>
+          <textarea name="Review" id="review" cols="30" rows="4"></textarea><br><br>
+          <input type="Submit" value="Subscribe">
+        </form>
+        <section class="rate-section">
+          <h2>Rate Us</h2>
+      </div>
+      <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5"></label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4"></label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3"></label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2"></label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1"></label>
+
+      </div>
+
+
+  </section>
+
+  <footer>
+    <nav class="footer-navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+
+
+    <a href="#" class="logo">R.Rakesh</a>
+
+<P>&#169; Rakesh Rathakrishnan 2023</P>
+</footer>
 </body>
-
 </html>

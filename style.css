@@ -3,17 +3,215 @@
  * CSS FILE
  */
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #fb8500;
+
+
+*{
+  margin:0;
+  padding:0;
+ box-sizing: border-box;
+ font-family: 'Poppins', sans-serif;
+
+}
+
+
+.header{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  padding:20px 10%;
+  background:transparent;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo
+{
+  font-size: 30px;
+  color:#404040;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+
+.navbar a {
+  font-size:18px;
+  color:#F2F2F2;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left:35px;
+  transition:3s;
+
+}
+
+.navbar a:hover {
+
+  color:rgb(14, 94, 120);
+}
+
+.home{
+  height:100vh;
+  background:linear-gradient(-90deg,#f2b749 65%,#F2F2F2 35%);
   display: flex;
   justify-content: center;
+  align-items:center;
+  padding:0 10%;
+}
+
+.home-image{
+  width: 50rem;
+  height: 30rem;
+  background: #404040;;
+}
+
+.home-content{
+  max-width: 600px;
+  color:#fff;
+  text-align: right;
+
+}
+
+.home-content h1{
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.home-content h3 {
+  font-size: 50px;
+  color:#404040;
+  -webkit-text-stroke: .5px #fff;
+}
+
+.home-content p{
+  font-size: 18px;
+  margin-top:20pxx;
+}
+
+.portfolio {
+  background: #F2F2F2;
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-size: 40px;
+  color: #404040;
+}
+
+.portfolio-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.portfolio-item {
+  width: 400px;
+  margin: 20px;
+  padding: 50px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(172, 11, 11, 0.2);
+}
+
+.portfolio-item img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.portfolio-item p {
+  font-size: 10px;
+  margin-top: 10px;
+  color: #404040;
+}
+
+.btn
+ {
+  margin-top: 3rem;
+  background-color: green;
+  color: white;
+  padding:0.5rem 1rem;
+  border-radius: 1rem;
+  text-decoration: none;
+ }
+
+
+
+.rlogo {
+  width: 100%;
+  max-height: 3200px;
+  max-width: 50Rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.contact-form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-h1 {
-  font-size: 2rem;
-  font-weight: bold;
+.contact-form form {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 10px;
+  background: #f2b749;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.rating {
+  display: inline-block;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.rating label:before {
+  content: '\2605'; /* Unicode character for a star */
+  margin: 5px;
+  color: #ccc;
+}
+
+.rating input:checked ~ label:before {
+  color: #ffcc00; /* Change the star color when selected */
+}
+footer {
+  background: #f2b749;
+  color: #fff;
   text-align: center;
-  color: #023047;
+  padding: 20px;
+}
+
+/* Style for the footer navbar */
+.footer-navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-navbar li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }
